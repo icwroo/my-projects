@@ -1,0 +1,123 @@
+*{
+    font-family: 'Friz Quadrata Std', sans-serif;
+}
+
+
+html, body{
+    margin: 0;
+}
+
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    color: #ccc;
+    background:linear-gradient(#1D0D40, #AD26BF)
+}
+
+.card{
+    background-image: linear-gradient();
+    overflow: hidden;
+    border-radius: 16px;
+    max-width: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.5s;
+    box-shadow: rgba(0, 0, 0, 0.35) 8px 5px 15px;
+}
+
+.card:hover{
+    background-color: #AD26BF;
+}
+
+.card .img{
+    background-image: url(./images/shacodoido.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 360px;
+    height: 290px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    
+}
+
+.card .img span{
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 100px;
+    text-transform: uppercase;
+    transition: all .5s
+}
+
+.card .content{
+    height: 0px;
+    
+    padding: 0 20px;
+    overflow: hidden;
+    position: relative;
+    box-sizing: border-box;
+    transition: all 0.5s;
+    transform: translateY(0);
+    
+}
+
+.card:hover .img{
+    
+    width: 440px;
+}
+
+.card:hover .content{
+    padding: 20px;
+    height: 250px;
+    transform: translateY(0);
+    
+}
+
+.card .container .title{
+    font-size: 24px; 
+    font-weight: bold !important;
+}
+
+.card .content .desc{
+    font-size: 14px;
+    font-weight: 100;
+    
+}
+
+.card .arrow{
+    padding: -5px;
+    font-size: 28px;
+    transform: rotate(-180deg);
+    transition: all .5s;
+}
+
+.card:hover .arrow{
+    transform: rotate(0);
+}
+
+.card .arrow span{
+    font-size: 24px;
+}
+.card .content p{
+    margin-bottom: 0;
+}
+
+.desc{
+    margin: 0 auto;
+}
+
+.img span{
+    color: white;
+    margin-top: 270px;
+}
+
+.title{
+    font-weight: bold;
+}
